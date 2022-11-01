@@ -142,7 +142,7 @@ namespace ConsoleApp
                     break;
                 }
                 Screen();
-                Thread.Sleep(100);
+                Thread.Sleep(10);
                 if (KeyAvailable)
                 {
                     ConsoleKey key = ReadKey(false).Key;
