@@ -142,6 +142,7 @@ namespace ConsoleApp
                     break;
                 }
                 Screen();
+                Thread.Sleep(100);
                 if (KeyAvailable)
                 {
                     ConsoleKey key = ReadKey(false).Key;
@@ -212,7 +213,6 @@ namespace ConsoleApp
                             }
                             break;
                         case ConsoleKey.Escape:
-                            SetCursorPosition(0, 31);
                             Environment.Exit(0);
                             break;
                         default:
